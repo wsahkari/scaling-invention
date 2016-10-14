@@ -1,0 +1,286 @@
+```<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <title>Javascript Sheet</title>
+    <meta charset="UTF-8">
+
+  </head>
+  <body>
+    <div id="content"></div>
+    <h1>
+      I suggest that as you uncomment a line or solve a prompt,<br />
+      you then re-comment the line when you're done.
+    </h1>
+    <h2>This will help keep your console tidy so you know what you're looking at<br /> &amp it'll prevent a bunch of pop ups! Tomorrow you'll make your own &ltscript&gt tags :)</h2>
+    <script>
+      // "This is a single line javascript comment
+      /*
+        This is a mult-line javascript comment
+        Javascript either gets embedded between script tags like we did with css using style tags
+        Or we can link to external stylesheets like we did for css using the link tags.
+      */
+
+      /*
+        The line below this comment is an example of instantiating, or creating a variable
+      */
+      var noVal; // Notice this variable has no value!
+      // Here's an example of creating a instantiating a variable and assigning it a value
+      var hasVal = 0; // One equal sign is called the assignment operator.
+      // uncomment the line below and open the developer's console to see what happens when we invoke the console.log function below
+       console.log('variable with no val', noVal, 'variable with a value', hasVal);
+
+      // Notice that the console.log function takes as many arguments as you want to pass it, as long as they're seperated by commas!
+    </script>
+
+    <script>
+      /* Whoa! A second set of script tags! You can have as many script tags as you'd like in your html document.
+
+        Here's an example of making a function.
+        First, we use the key word function, and follow it with the function name.
+        Then come the (optional) parameters in parentheses ()
+        Lastly we use curly braces {} to create the function body
+
+        */
+        // Here's an example of a function that takes no parameters
+        function sayHi () { // Notice this function takes no parameters
+          // This is the function body
+          alert('hi friends');
+        }
+
+        // Uncomment the lines below to see what happens when we invoke our function.
+        // Remember, you have to save this file, and then go back to where it's open in the browser
+        // and refresh the browser to see any results!
+         sayHi(){
+         sayHi('bob'); // Even though this function takes no parameters, we're passing in an argument. What happens when we run this code?
+         }
+        /*
+        To make the code in our function body run, we call or invoke our function.
+        We do this by using the funciton name and follow it with parentheses.
+        If the function takes parameters, we pass in the values that will replace those parameters in the funciton body.
+        These values are called arguments.
+      */
+
+      // Here's an example of a function that takes parameters
+      function sayHiName (userName) { // Remember, userName is a variable. We can call it whatever we want!
+        // Whatever you decide to call your parameters, you have to use the same names in the function body when defining the function!
+        // console.log('Hello ' + userName); // This is called string concatination.
+      }
+      // Uncomment the lines below to see what happens when we invoke our function.
+       sayHiName ('bob');
+      sayHiName ('jane', 'albrey');  Take a second to talk with your partner about this. This function takes one parameter, what do you expect to happen when we run it? Were you right?
+
+      function returnsGreeting () {
+        // The above two functions don't explicitly return a value. In order to return a value from a function, we use they key word return.
+        return 'Hello humans!';
+      }
+
+      // If we want to see this function run in the console, uncomment the below line.
+       console.log(returnsGreeting());
+      // If we want to see this function's return value in a pop up, uncomment the below line.
+       alert(returnsGreeting());
+      // Uncomment the line below. Do you expect to see any result when you refresh? Discuss why or why not you were correct with your partner.
+        returnsGreeting();
+
+    </script>
+    <div id="data_center"></div>
+    <script>
+
+      /*
+        Ok, your turn! Create the appropriate functions by following the prompts. Invoke your functions one at a time to see if you're getting the expected results. Easy!
+      */
+      
+
+      // Let's take a look at strings first, yeah? Remember, String is a data type in javascript.
+      // If you need a refresher on what these data types are or what things mean, check out the docs! Also feel free to ask me or eachother, but remember:
+      // The docs are always there for you. Friends and instructors at times have personal lives
+
+      // write a function that takes no parameters. When invoked, this function should return a greeting of your choice. (Need an example? There's one a few lines up, but try to do it without checking!) 
+      function helloThere
+
+      // Next, let's have a function called callingFor that takes two strings as parameters 
+      function callingFor  (helloThere)
+      // When invoked, we should see something like:
+      // callingFor('Jane', 'Jack'); // Returns 'Are you calling for Jane or Jack?'
+      // Can you rewrite the function body so the above invocation returns 'Are you calling for Jack or Jane?' 
+      function callinFor(name1, name2) {
+         return 'are you calling for ' name1 + ' or ' +
+      } 
+
+
+      // write a function multiLanguageGreeting that takes two parameters, a name and a language
+      // multiLanguageGreeting should return a greeting in different languages based on the language argument passed in. Feel free to use abbreviations if you want!
+      // Make sure that multiLanguageGreeting handles at least 2 languages!
+      // multiLanguageGreeting('John', 'en'); // returns 'Hello John'
+      // multiLanguageGreeting('John', 'es'); // returns 'Hola John'
+      // multiLanguageGreeting('John', 'fr'); // returns 'Bon  Jour John' 
+       function HolaHelloBon (john){}
+      
+
+
+
+      // Remember there is a way to get the length of a string?
+      // *hint* google: string length javascript
+      // write a function passwordCheck that takes a string as a parameter
+      // if the string is less than 8 characters, return 'too short'
+      // otherwise return 'good enough'
+
+
+      // What are these kinds of functions useful for? Well, we can dynamically create url's for searching, for example. (this would happen via an api call, all stuff that's for later)
+      // Fill in the function below to take a one word movie name as a parameter
+      // and return that parameter
+      function searchMovieDatabase() {
+
+      }
+
+      // This code below actually gets the movie data and appends it to the DOM
+      // We're making use of Open Movie Database, a free database of movies for this function.
+      // https://www.omdbapi.com/
+      // To prevent errors (since you hadn't created the above function yet!) the code to make the actual request is commented out. Go ahead and highlight lines 134 - 145 and press command + slash. See how you can comment/uncomment entire blocks of code at once!
+      // Don't worry too much about the details, they shouldn't make sense yet! But for the curious:
+      // First we invoke your searchMovieDatabase function and assign the results that are returned to a variable
+      // var searchTerm = searchMovieDatabase('big');
+      // Whaaa???? Yup. You can invoke a function and assign the return value to a variable.
+      // // This creates a new request to an external server
+      // var xhr = new XMLHttpRequest();
+      // // Here we use the results of your searchMovieDatabase function to create the query string dynamically and make the actual http request
+      // xhr.open('GET', 'http://www.omdbapi.com/?t=' + searchTerm + '&y=&plot=short&r=json'); // Notice the use of string concatination
+      // // And we send no info to the external server. We're only asking for information. Hence this being a "GET" request
+      // xhr.send(null);
+      // // Lastly we pass a function that gets called automatically upon fullfillment of the http request!
+      // xhr.onreadystatechange = function() {
+      //   document.getElementById('data_center').textContent = xhr.responseText;
+      // }
+      // Really, all of this code should be inside of the function searchMovieDatabase, but I wanted you to not hate this exercise too much!
+
+      // Well, we started easy-ish, got pretty complex there in the middle, and ended pretty simply enough, yeah?
+
+      /******************************************************************************/
+
+
+      // Numbers next, yeah? Remember, the Number is a data type in javascript.
+      // Ok, basics. Function add takes two parameters and returns the sum of those two numbers
+
+      // Function square that takes a number and returns that number squared
+
+      // Function calculate that takes three parameters. Two numers and a string.
+        // The string will be a mathmatical operation (add, subtract, multiply, divide)
+        // Whatever mathmatical operation is passed as the third parameter is done on the two number parameters, and the result is what is returned
+      /*
+        So:
+          caluclate(9, 9, 'subtract'); // returns 0
+          calculate(9, 9, 'add'); // returns 18
+          calculate(9, 9, 'multiply'); // returns 81
+          calculate(9, 9, 'divide'); // returns 1
+
+          Try to do some error checking! So if the operation parameter isn't one you're covering,
+          have your function return some kind of error message!
+
+          So:
+            caluclate(9, 9, 'cosin') // returns 'I am a simple caluclator, not a scientific one!' or something
+
+      */
+
+
+      // Function isEven takes a number as a parameter.
+        // Returns true if the number is even, and false if it's odd
+
+      // Function isOdd does the opposite as isEven.
+      /***** Can you figure out how to use the logical operators and isEven to write isOdd? ***/
+
+
+    </script>
+
+    <script>
+      // Last but not least, let's practice a bit with the logical and comparison operators!
+      var globalUser = 'Barack';
+      var globalUserPassword = 'Obama';
+
+      // Write a function that takes a name and a password as parameters
+      // if the name equals globalUser OR the password equals globalUserPassword return the boolean true
+      // otherwise return the booelan false
+
+
+      // Write a function that takes a name and a password as parameters
+      // if the name equals globalUser AND the password equals globalUserPassword return the boolean true.
+      // otherwise return the boolean false
+
+
+      // Write a function that takes a username as a parameters and returns the boolean false if the username DOES NOT equal the globalUser
+
+
+      // Write a function called max that takes two numbers and returns the larger of the two
+
+      // Write a function called min that taked two numbers and returns the smaller of the two
+
+
+      // Write a function called longest that takes two strings and returns the length of the longer of the two strings
+
+      // Write a function called longestString that takes two strings and returns the longer of the two strings
+
+      // Write a function called isEqual that takes two parameters and returns true of they're equal and false if they're not
+
+
+    </script>
+
+    <script>
+      // Make it this far? Awesome! Fix the syntax errors in the code below. Uncomment each section at a time. (If you try to uncomment it too early, since this is broken code, unexpected things will happen!)
+
+      /********************* One   *******************************/
+        // function aFunc() {
+        // var once= 'once'
+        // var twice = 'twice';
+        // return once + twice + ' three times a lady';
+        // }
+
+        // console.log(aFunc());
+      /************************************************************/
+
+      /********************* Two   ********************************/
+        // funcion cheer(team)
+        //   return 'Let\'s go' + ' ' + team + !; // What's that \' about? look up escape characters!
+
+        // console.log(cheer('giants'));
+      /************************************************************/
+
+      /********************* Three ********************************/
+        // var bigNum = 1000000;
+        // var smallNum === -1;
+
+        // if bigNum > smallNum {
+          // console.log('This is the big one ', bigNum);
+        // }
+      /************************************************************/
+
+      /********************* Four  ********************************/
+        // function addEleven number return number + 11;
+
+        // alert(addEleven(11));
+      /************************************************************/
+
+      /********************* Five  ********************************/
+        // function ageChecker (age)
+          // var message;
+        // if (age < 18) { message = 'Way too young!'; }
+        // } else if ( (age >= 18) && (age <50)) {
+          // message  == 'Maybe';
+        // } else {}
+          // message = 'Hey Grandma!';
+          // return message;
+        // }
+
+        // console.log(ageChecker(19));
+        // console.log(ageChecker(32));
+        // console.log(ageChecker(65));
+      /************************************************************/
+
+      /********************* Six   ********************************/
+        function trickQuestion() {
+          return 'There\'s nothing wrong with this function! But we don\'t see the results of invoking it. Chane the function call below so that the results of this function end up in the console!';
+        }
+
+        // trickQuestion();
+      /************************************************************/
+
+    </script>
+  </body>
+</html>```

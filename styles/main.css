@@ -1,0 +1,79 @@
+body {
+ 	background-color: brown;
+ }
+
+ #valueexplain { 
+ 	position: relative;
+    height: 300px;
+    width: 600px; 
+    border-width: 2px; 
+ 	border-color: black; 
+ 	border-style: double; 
+ 	text-align: top; 
+ 	align-content: middle; 
+ 	
+ 	
+ } 
+ img{ 
+     display: block; 
+     margin:auto;
+     width: 40%; 
+
+ } 
+
+ h1 {
+ 	font-size: 700%; 
+ 	align: center
+ }
+  
+ #sunlight { 
+ 	position: relative;
+ 	height: 300px;
+ 	width: 600px;
+ 	border-width: 2px; 
+ 	border-color: black; 
+ 	border-style: double;  
+ 	margin: auto; 
+
+ } 
+
+ h2 {
+ 	font-size:700%;  
+ } 
+
+ #rosepedals { 
+ 	position: relative; 
+    height: 300px; 
+    width: 600px; 
+    border-width: 2px; 
+    border-color: black; 
+    border-style: double; 
+    align-content:middle; 
+    margin: auto; 
+
+ }
+ 
+ h3 {
+ 	font-size: 700%;
+ } 
+
+ #crybaby { 
+ 	position: relative;
+    height: 300px;
+    width:600px; 
+    border-width: 2px; 
+    border-color: black;
+    border-style: double; 
+    align-content: middle; 			
+    margin:auto; 
+
+ }
+
+  
+
+
+
+
+
+
+
